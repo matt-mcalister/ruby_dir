@@ -2,5 +2,9 @@
 require "ruby_dir"
 require "pry"
 
+
+binding.pry
+
+
 rd = RubyDir::Instruct.new(ARGV[0])
 rd.create_directory
