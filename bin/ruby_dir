@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 require "ruby_dir"
+require "pry"
 
-rd = RubyDir::Instruct.new
+rd = RubyDir::Instruct.new(ARGV[0])
 rd.create_directory
