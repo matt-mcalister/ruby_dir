@@ -22,7 +22,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Once installed, run `ruby_dir NAME`, where `NAME` is the name of the repo you
+would like to generate.
+
+Here are the files that are generated when you run `ruby_dir blackjack`:
+
+```
+blackjack/
+  ├── app/                      
+  │   ├── models/
+  │   └── run.rb              # this file contains an empty App class
+  ├── config/
+  │   └── environment.rb      # this file handles bundling your gems and local files
+  ├── spec/
+  │   ├── blackjack_spec.rb   # this file contains one test as a template
+  │   └── spec_helper.rb
+  ├── tools/
+  │   └── console.rb          # this file contains starter code for a basic console
+  ├── .rspec                   
+  └── Gemfile                 # included gems are rspec, require_all, and pry
+```
+
 
 ## Development
 
