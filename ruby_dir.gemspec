@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{This is a script for generating a basic ruby directory.}
   spec.description   = %q{This is a script for generating a basic ruby directory with bundler, rake and rspec integrations.}
-  spec.homepage      = "https://github.com/matt-mcalister/ruby-dir"
+  spec.homepage      = "https://github.com/matt-mcalister/ruby_dir"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
