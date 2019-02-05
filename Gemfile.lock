@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruby_dir (0.1.1)
+    ruby_dir (0.1.2)
       bundler
       rspec
 
