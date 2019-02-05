@@ -33,6 +33,8 @@ Gem::Specification.new do |spec|
   spec.executables   = ["ruby_dir"]
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "rspec"
+  spec.add_runtime_dependency "bundler"
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
 end
