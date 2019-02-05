@@ -1,11 +1,7 @@
 PATH
   remote: .
   specs:
-    ruby_dir (0.1.0)
-
-GEM
-  remote: https://api.rubygems.org/
-  specs:
+    ruby_dir (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -19,3 +15,6 @@ DEPENDENCIES
   bundler (~> 2.0)
   rake (~> 10.0)
   ruby_dir!
+
+BUNDLED WITH
+   2.0.1
