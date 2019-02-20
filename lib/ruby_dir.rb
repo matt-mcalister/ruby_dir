@@ -30,7 +30,7 @@ module RubyDir
         `cd #{name} && echo 'require_relative "../config/environment.rb"' | cat - spec/spec_helper.rb > temp && mv temp spec/spec_helper.rb`
         puts "created #{name}/spec/spec_helper.rb"
         `cd #{name} && touch spec/#{name}_spec.rb`
-        `echo "describe "App.run" do\n  it 'executes successfully without errors' do\n    expect{App.run}.to_not raise_error\n  end\nend" >> #{name}/spec/#{name}_spec.rb`
+        `echo "describe 'App' do\n  it 'executes successfully without errors' do\n    expect{App.run}.to_not raise_error\n  end\nend" >> #{name}/spec/#{name}_spec.rb`
         puts "created #{name}/spec/#{name}_spec.rb"
         `cd #{name} && mkdir tools && touch tools/console.rb`
         `echo "require_relative '../config/environment.rb'\n\ndef reload\n  load 'config/environment.rb'\nend\n\n# Insert code here to run before hitting the binding.pry\n# This is a convenient place to define variables and/or set up new object instances,\n# so they will be available to test and play around with in your console\n\nbinding.pry\nputs 'goodbye'" >> #{name}/tools/console.rb`
